@@ -72,7 +72,7 @@ body {
 .calculator-section {
   max-width: 600px;
   margin: auto;
-  background: linear-gradient(to right, #33b3d0, #1e4f3d);
+      background: linear-gradient(to right, #33b3d0, #005661);
   padding: 40px;
   border-radius: 12px;
 }
@@ -142,18 +142,18 @@ h2 {
 }
 
 .current {
-   background: linear-gradient(to right, #33b3d0, #1e4f3d);
+   background: linear-gradient(to right, #33b3d0, #71a3c1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .new-style {
- background: linear-gradient(to right, #33b3d0, #1e4f3d);
-  color: #fff;
+ background: linear-gradient(to right, #33b3d0, #71a3c1);
+  color: #000000;
 }
 
 .profit-style {
-  background: linear-gradient(to right, #33b3d0, #1e4f3d);
-  color: #fff;
+  background: linear-gradient(to right, #33b3d0, #71a3c1);
+  color: #000000;
   text-align: center;
 }
 
@@ -215,6 +215,11 @@ h3 {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.cal-sec {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 
