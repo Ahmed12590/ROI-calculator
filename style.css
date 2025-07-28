@@ -199,9 +199,11 @@ h2 {
 
 h3 {
   font-size: 20px;
-  font-weight: 700;
+  
   margin-bottom: 20px;
   letter-spacing: 1px;
+   font-family: "Plus Jakarta Sans", Arial, sans-serif;
+ font-weight: 600;
 }
 
 .stat-row {
@@ -370,4 +372,9 @@ h3 {
   .image-sec img {
     margin: 0 auto;
   }
+  .hero-content h1 {
+    font-size: 22px;
+  }
+  .hero-content .tagline {
+    font-size: 18px;}
 }
