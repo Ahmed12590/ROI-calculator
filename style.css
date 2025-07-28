@@ -270,12 +270,10 @@ h3 {
 /* ///////////////////////////////// */
 
 .booking-section {
-  /* background-color: #2f9bdc; */
-  background: url("images/home-bg\ \(1\).jpg") no-repeat center center/cover;
+  background: url("images/home-bg (1).jpg") no-repeat center center/cover;
   color: white;
   padding: 40px 20px;
   min-height: 300px;
-  
 }
 
 .booking-container {
@@ -289,12 +287,13 @@ h3 {
 }
 
 .image-sec {
-  flex: 1;
+  flex: 1.2;
   text-align: center;
 }
 
 .image-sec img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
 }
 
@@ -303,56 +302,50 @@ h3 {
   text-align: left;
 }
 
-.booking-content p {
-  font-size: 16px;
-  color: #ffffff;
-  margin-bottom: 40px; /* Increased gap below the paragraph */
-}
-
-
 .booking-content h3 {
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 20px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-family: "Plus Jakarta Sans", Arial, sans-serif;
-    font-weight: 500;
+  font-weight: 500;
 }
 
-.booking-subtext p {
+.booking-subtext {
   font-size: 16px;
-  color: #000000;
-  margin-bottom: 30px;
-  
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
+/* Styled button */
 .booking-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   padding: 12px 24px;
-  background-color: #000000;
-  color: white;
+  border-radius: 9999px;
   font-size: 16px;
   font-weight: 600;
+  color: #348fd9;
+  background: white;
   text-decoration: none;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
 }
 
 .booking-btn:hover {
-  color: black;
-  background-color: #ffffff;
+  background: #f0f4f8;
 }
 
-.image-sec {
-  flex: 1.2; /* Increase flex size to make image area slightly wider than text */
-  text-align: center;
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1f0fd;
+  padding: 6px;
+  border-radius: 50%;
 }
 
-.image-sec img {
-  width: 100%;
-  max-width: 600px; /* Increased from default */
-  height: auto;
-}
 
 /* -----------------------------------
    LARGE DEVICES (Desktops, ≥ 1200px)
