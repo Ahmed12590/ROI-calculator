@@ -456,8 +456,11 @@ h3 {
   }
 
   .booking-btn {
-    width: 100%;
+    /* width: 100%; */
     padding: 14px;
+  }
+  .booking-container {
+    display: block;
   }
   
 }
