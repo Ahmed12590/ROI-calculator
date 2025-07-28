@@ -2,10 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body {
-  /* background-color: #2f9bdc; */
-  /* background: url("images/background.png") no-repeat center center/cover; */
-}
+
 
 
 .site-header {
@@ -104,16 +101,19 @@ body {
   max-width: 600px;
   margin: auto;
   /* background: linear-gradient(to right, #2f9bdc, #2f9bdc); */
-  background-color: #cccbcb;
+  background-color: #f0f0f0;
   padding: 40px;
   border-radius: 12px;
   margin-top: 50px;
-  border-style: dotted;
+  border-style: ridge;
+
 }
 
 h2 {
   text-align: center;
   margin-bottom: 10px;
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+  font-weight: 700; 
 }
 
 
@@ -145,6 +145,8 @@ h2 {
 .form-group label {
   font-weight: bold;
   margin-bottom: 5px;
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+ font-weight: 500;
 }
 
 .form-group input,
@@ -176,17 +178,21 @@ h2 {
 }
 
 .current {
-   background: linear-gradient(to right, #33b3d0, #71a3c1);
+  border: ridge;
+   /* background: linear-gradient(to right, #33b3d0, #71a3c1); */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .new-style {
- background: linear-gradient(to right, #33b3d0, #71a3c1);
-  color: #000000;
+   border: ridge;
+   color: #000000;
+ /* background: linear-gradient(to right, #33b3d0, #71a3c1); */
+  
 }
 
 .profit-style {
-  background: linear-gradient(to right, #33b3d0, #71a3c1);
+   border: ridge;
+  /* background: linear-gradient(to right, #33b3d0, #71a3c1); */
   color: #000000;
   text-align: center;
 }
@@ -235,7 +241,7 @@ h3 {
 .profit-style .stat-label {
   margin-top: 5px;
   font-size: 14px;
-  color: #e0ffe6;
+  color: #000000;
   opacity: 0.9;
 }
 
@@ -254,6 +260,8 @@ h3 {
 .cal-sec {
     text-align: center;
     padding-bottom: 20px;
+    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+ font-weight: 500;
 }
 
 

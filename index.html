@@ -74,8 +74,9 @@
     <input type="number" id="monthlySpend" value="60000" />
 
     <label for="monthlyRevenue">What is your estimated Monthly Ad Revenue?</label>
-    <input type="range" id="monthlyRevenue" min="10000" max="2000000" value="340000" step="10000" />
-    <div id="revenueDisplay">$340,000 /month</div>
+<input type="range" id="monthlyRevenue" min="0" max="5000000" value="100000" step="10000" />
+<div id="revenueDisplay">$100,000 /month</div>
+
   </div>
 
   <div class="results">
@@ -121,7 +122,8 @@
         <div><strong id="netProfit" class="blur">+$99,418</strong> <span>/mo</span></div>
         <div class="stat-label">est. ROI after media buyer fees</div>
       </div>
-      <button>GET STARTED</button>
+     <button onclick="calculate()">GET STARTED</button>
+
     </div>
   </div>
 </section>
