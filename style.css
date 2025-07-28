@@ -106,7 +106,7 @@
   border-radius: 12px;
   margin-top: 50px;
   border-style: ridge;
-
+/* border-color: #71a2c0; */
 }
 
 h2 {
@@ -146,7 +146,7 @@ h2 {
   font-weight: bold;
   margin-bottom: 5px;
   font-family: "Plus Jakarta Sans", Arial, sans-serif;
- font-weight: 500;
+ font-weight: bold;
 }
 
 .form-group input,
@@ -275,6 +275,7 @@ h3 {
   color: white;
   padding: 40px 20px;
   min-height: 300px;
+  
 }
 
 .booking-container {
@@ -353,28 +354,117 @@ h3 {
   height: auto;
 }
 
-/* Responsive: Stack columns on smaller screens */
-@media screen and (max-width: 768px) {
+/* -----------------------------------
+   LARGE DEVICES (Desktops, ≥ 1200px)
+----------------------------------- */
+@media screen and (min-width: 1200px) {
+  .hero-content h1 {
+    font-size: 45px;
+  }
+
+  .hero-content .tagline {
+    font-size: 24px;
+  }
+
+  .booking-content h3 {
+    font-size: 32px;
+  }
+}
+
+
+/* -----------------------------------
+   MEDIUM DEVICES (Laptops, ≥ 992px)
+----------------------------------- */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-inner {
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .booking-content h3 {
+    font-size: 26px;
+  }
+}
+
+
+/* -----------------------------------
+   SMALL DEVICES (Tablets, ≥ 768px)
+----------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content .tagline {
+    font-size: 18px;
+  }
+
   .booking-container {
     flex-direction: column;
     text-align: center;
   }
 
-  .booking-content {
+  .booking-content h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* -----------------------------------
+   EXTRA SMALL DEVICES (Mobiles, < 768px)
+----------------------------------- */
+@media screen and (max-width: 767px) {
+  .hero-inner {
+    display: block;
     text-align: center;
   }
 
-  .image-sec {
-    display: flex;
-    justify-content: center;
+  .hero-content {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .image-sec img {
-    margin: 0 auto;
-  }
   .hero-content h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
+
   .hero-content .tagline {
-    font-size: 18px;}
+    font-size: 16px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .booking-content h3 {
+    font-size: 20px;
+  }
+
+  .stat-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .booking-btn {
+    width: 100%;
+    padding: 14px;
+  }
+  
 }

@@ -59,7 +59,7 @@
 
       const currentRoas = (revenue / spend).toFixed(1);
       const currentRoi = ((revenue - spend) / spend * 100).toFixed(0);
-      console.log(currentRoi);
+      
 
       const multiplier = multipliers[businessType][adPlatform];
       const newRoasValue = (revenue / spend) * multiplier;
