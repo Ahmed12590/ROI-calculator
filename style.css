@@ -420,7 +420,9 @@ h3 {
     display: block;
     text-align: center;
   }
-
+.hero-section {
+  min-height: 228px;
+}
   .hero-content {
     text-align: center;
     margin-bottom: 20px;
