@@ -155,7 +155,7 @@ h2 {
 #revenueDisplay {
   text-align: center;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -10px;
   color: white;
   padding-bottom: 20px;
@@ -178,7 +178,7 @@ h2 {
 
 .current {
   /* border: ridge;  */
-  background: linear-gradient(to right, #6bd3eb, #7caac7);
+ background: linear-gradient(to right, #1598b6, #418dbd);
  
 }
 
