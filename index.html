@@ -5,161 +5,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unicorn</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="images/favicon.png" type="favicon">
-
-
-
+    <link rel="icon" href="images/favicon.png" type="favicon" />
   </head>
   <body>
-
-<header class="site-header">
-  <div class="logo-container">
-    <img src="images/logo.png" alt="Logo" class="site-logo">
-  </div>
-</header>
-
+    <header class="site-header">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Logo" class="site-logo" />
+      </div>
+    </header>
 
     <section class="hero-section">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <!-- <p class="subtext">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <!-- <p class="subtext">
         Unicorn on Average Increases AD ROI By 30–50%
       </p> -->
-      <h1>
-        DISCOVER YOUR AD ROI WITH<br /><span class="highlight">A TOP 1% MEDIA BUYER</span>
-      </h1>
-      <p class="tagline">
-        Calculate your potential return at PEAK performance.
-      </p>
-    </div>
-
-    <div class="hero-extra">
-      <!-- Add any content you want here -->
-      
-    </div>
-  </div>
-</section>
-
-
-
-<div class="calculator-wrapper">
-<section class="calculator-section">
-  <h2>TOP 1% AD ROI CALCULATOR</h2>
-  <p class="cal-sec">For high level brands and digital businesses only.</p>
-
-  <div class="form-group">
-    <div class="form-row">
-      <div>
-        <label for="businessType">Business Type</label>
-        <select id="businessType" onchange="calculate()">
-          <option value="Call Funnels">Call Funnels</option>
-          <option value="Ecommerce">Ecommerce</option>
-          <option value="Info Education">Info Education</option>
-          <option value="SaaS">SaaS</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="adPlatform">Ad Platform</label>
-        <select id="adPlatform" onchange="calculate()">
-          <option value="Meta Ads">Meta ads</option>
-          <option value="Google Ads">Google ads</option>
-          <option value="Youtube Ads">Youtube ads</option>
-          <option value="TikTok Ads">TikTok ads</option>
-        </select>
-      </div>
-    </div>
-
-    <label for="monthlySpend">Monthly Ad Spend</label>
-    <input type="number" id="monthlySpend" value="60000" />
-
-    <label for="monthlyRevenue">What is your estimated Monthly Ad Revenue?</label>
-<input type="range" id="monthlyRevenue" min="0" max="5000000" value="100000" step="10000" />
-<div id="revenueDisplay">$100,000 /month</div>
-
-  </div>
-
-  <div class="results">
-    <div class="current">
-      <h3>CURRENT</h3>
-      <div class="stat-row">
-        <div class="stat-box">
-          <div><strong id="currentRevenue" class="blur">$340,000</strong> <span>/mo</span></div>
-          <div class="stat-label">AD REVENUE</div>
+          <h1>
+            DISCOVER YOUR AD ROI WITH<br /><span class="highlight"
+              >A TOP 1% MEDIA BUYER</span
+            >
+          </h1>
+          <p class="tagline">
+            Calculate your potential return at PEAK performance.
+          </p>
+          <a href="#calculator-section" class="booking-btn">
+            Calculate my ROI
+            <span class="icon-badge">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#348fd9"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"
+                />
+              </svg>
+            </span>
+          </a>
         </div>
-        <div class="stat-box">
-          <div><strong id="currentROAS" class="blur">5.7x</strong></div>
-          <div class="stat-label">ROAS</div>
-        </div>
-        <div class="stat-box">
-          <div><strong id="currentROI" class="blur">467%</strong></div>
-          <div class="stat-label">AD ROI</div>
+
+        <div class="hero-extra">
+          <!-- Add any content you want here -->
         </div>
       </div>
+    </section>
+
+    <div class="calculator-wrapper">
+      <section id="calculator-section">
+
+        <h2>TOP 1% AD ROI CALCULATOR</h2>
+        <p class="cal-sec">
+          For high level brands and digital businesses only.
+        </p>
+
+        <div class="form-group">
+          <div class="form-row">
+            <div>
+              <label for="businessType">Business Type</label>
+              <select id="businessType" onchange="calculate()">
+                <option value="Call Funnels">Call Funnels</option>
+                <option value="Ecommerce">Ecommerce</option>
+                <option value="Info Education">Info Education</option>
+                <option value="SaaS">SaaS</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="adPlatform">Ad Platform</label>
+              <select id="adPlatform" onchange="calculate()">
+                <option value="Meta Ads">Meta ads</option>
+                <option value="Google Ads">Google ads</option>
+                <option value="Youtube Ads">Youtube ads</option>
+                <option value="TikTok Ads">TikTok ads</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="monthlySpend">Monthly Ad Spend</label>
+          <input type="number" id="monthlySpend" value="60000" />
+
+          <label for="monthlyRevenue"
+            >What is your estimated Monthly Ad Revenue?</label
+          >
+          <input
+            type="range"
+            id="monthlyRevenue"
+            min="0"
+            max="5000000"
+            value="100000"
+            step="10000"
+          />
+          <div id="revenueDisplay">$100,000 /month</div>
+        </div>
+
+        <div class="results">
+          <div class="current">
+            <h3>CURRENT</h3>
+            <div class="stat-row">
+              <div class="stat-box">
+                <div>
+                  <strong id="currentRevenue" class="blur">$340,000</strong>
+                  <span>/mo</span>
+                </div>
+                <div class="stat-label">AD REVENUE</div>
+              </div>
+              <div class="stat-box">
+                <div><strong id="currentROAS" class="blur">5.7x</strong></div>
+                <div class="stat-label">ROAS</div>
+              </div>
+              <div class="stat-box">
+                <div><strong id="currentROI" class="blur">467%</strong></div>
+                <div class="stat-label">AD ROI</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="new-style">
+            <h3>NEW</h3>
+            <div class="stat-row">
+              <div class="stat-box">
+                <div>
+                  <strong id="newRevenue" class="blur">$445,018</strong>
+                  <span>/mo</span>
+                </div>
+                <div class="stat-label">AD REVENUE</div>
+              </div>
+              <div class="stat-box">
+                <div><strong id="newROAS" class="blur">7.4x</strong></div>
+                <div class="stat-label">ROAS</div>
+              </div>
+              <div class="stat-box">
+                <div><strong id="newROI" class="blur">642%</strong></div>
+                <div class="stat-label">AD ROI</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profit-style">
+            <h3>RETURN ON INVESTMENT</h3>
+            <div class="stat-box">
+              <div>
+                <strong id="netProfit" class="blur">+$99,418</strong>
+                <span>/mo</span>
+              </div>
+              <div class="stat-label">est. ROI after media buyer fees</div>
+            </div>
+            <!-- <button onclick="calculate()">GET STARTED</button> -->
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="new-style">
-      <h3>NEW</h3>
-      <div class="stat-row">
-        <div class="stat-box">
-          <div><strong id="newRevenue" class="blur">$445,018</strong> <span>/mo</span></div>
-          <div class="stat-label">AD REVENUE</div>
+    <!-- Booking Section -->
+    <section class="booking-section">
+      <div class="booking-container">
+        <div class="image-sec">
+          <img src="images/3rd-img.png" alt="Ad Visual" />
         </div>
-        <div class="stat-box">
-          <div><strong id="newROAS" class="blur">7.4x</strong></div>
-          <div class="stat-label">ROAS</div>
-        </div>
-        <div class="stat-box">
-          <div><strong id="newROI" class="blur">642%</strong></div>
-          <div class="stat-label">AD ROI</div>
+        <div class="booking-content">
+          <h3>
+            Grow Your AD ROI With the BEST<br />Media Buyers & Ad Specialists
+          </h3>
+          <p class="booking-subtext">
+            Book a 15-minute “connect me” demo below to see if you qualify
+          </p>
+          <a
+            href="https://ttaa.unicorninnovations.com/widget/bookings/meetwithui"
+            class="booking-btn"
+            target="_blank"
+          >
+            Book Now
+            <span class="icon-badge">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="#348fd9"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"
+                />
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="profit-style">
-       <h3> RETURN ON INVESTMENT </h3>
-      <div class="stat-box">
-        <div><strong id="netProfit" class="blur">+$99,418</strong> <span>/mo</span></div>
-        <div class="stat-label">est. ROI after media buyer fees</div>
-      </div>
-     <!-- <button onclick="calculate()">GET STARTED</button> -->
-
-    </div>
-  </div>
-</section>
-</div>
-  
-
-
-
-
-
-
-
-<!-- Booking Section -->
-<section class="booking-section">
-  <div class="booking-container">
-    <div class="image-sec">
-      <img src="images/3rd-img.png" alt="Ad Visual" />
-    </div>
-    <div class="booking-content">
-      <h3>Grow Your AD ROI With the BEST<br>Media Buyers & Ad Specialists</h3>
-      <p class="booking-subtext">Book a 15-minute “connect me” demo below to see if you qualify</p>
-      <a href="https://ttaa.unicorninnovations.com/widget/bookings/meetwithui" class="booking-btn" target="_blank">
-        Book Now  
-        <span class="icon-badge">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="#348fd9" viewBox="0 0 24 24">
-            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z"/>
-          </svg>
-        </span>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-
-
-<script src="app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
